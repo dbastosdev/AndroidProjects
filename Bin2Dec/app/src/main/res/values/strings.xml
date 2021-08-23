@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Bin2Dec</string>
+    <string name="app_name">Conversor Binário para Decimal</string>
+    <string name="text_button">calcular</string>
+    <string name="legend_bin">Entrada binária</string>
+    <string name="result">255</string>
+    <string name="input">01010101</string>
+    <string name="imageView">backgroundResult</string>
 </resources>
