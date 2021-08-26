@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GameFindNumber</string>
+    <string name="textGame">Escolha um número entre 0 e 10</string>
+    <string name="player1">Player1</string>
+    <string name="play">Jogar</string>
+    <string name="textComputer">Escolha do computador</string>
+    <string name="winner">Vencendor</string>
+    <string name="numberTwo">Digite um número</string>
+    <string name="numberOne">Digite um número</string>
+    <string name="player2">Player2</string>
+</resources>
