@@ -1,11 +1,14 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">GameFindNumber</string>
-    <string name="textGame">Escolha um número entre 0 e 10</string>
-    <string name="player1">Player1</string>
+    <string name="textGame">Escolha um número entre 0 e 9</string>
+    <string name="player1">Jogador 1</string>
     <string name="play">Jogar</string>
     <string name="textComputer">Escolha do computador</string>
-    <string name="winner">Vencendor</string>
-    <string name="numberTwo">Digite um número</string>
-    <string name="numberOne">Digite um número</string>
-    <string name="player2">Player2</string>
+    <string name="winner">Vencedor</string>
+    <string name="numberTwo">Digite</string>
+    <string name="numberOne">Digite</string>
+    <string name="player2">Jogador 2</string>
+    <string name="pontos1">0</string>
+    <string name="pontos2">0</string>
+    <string name="reset">Zerar</string>
 </resources>
