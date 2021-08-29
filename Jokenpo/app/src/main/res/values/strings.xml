@@ -4,7 +4,10 @@
     <string name="scissor">scissor</string>
     <string name="paper">paper</string>
     <string name="rock">rock</string>
-    <string name="result">Você ganhou!</string>
+    <string name="result">Resultado</string>
     <string name="textToUser">Escolha uma opção abaixo</string>
     <string name="botText">Escolha do app</string>
+    <string name="youloose">Você perdeu!! :(</string>
+    <string name="youwin">Você ganhou!! :)</string>
+    <string name="draw">Empate!</string>
 </resources>
