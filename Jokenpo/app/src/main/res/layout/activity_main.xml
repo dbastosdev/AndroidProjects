@@ -12,6 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="@string/botText"
         android:textAlignment="center"
@@ -97,4 +98,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userPaper" />
+
+    <TextView
+        android:id="@+id/textUserPointName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/userPoints"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textBotPointName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/textBotPointName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/botPoints"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textUserPointName"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/textUserPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/numUserPoints"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/textBotPoint"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserPointName" />
+
+    <TextView
+        android:id="@+id/textBotPoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/numBotPoints"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textUserPoints"
+        app:layout_constraintTop_toBottomOf="@+id/textBotPointName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

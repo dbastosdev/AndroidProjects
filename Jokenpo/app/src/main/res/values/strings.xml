@@ -10,4 +10,8 @@
     <string name="youloose">Você perdeu!! :(</string>
     <string name="youwin">Você ganhou!! :)</string>
     <string name="draw">Empate!</string>
+    <string name="userPoints">Seus pontos</string>
+    <string name="botPoints">Pontos computador</string>
+    <string name="numUserPoints">0</string>
+    <string name="numBotPoints">0</string>
 </resources>
