@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Jokenpo</string>
+    <string name="botchoice">botChoice</string>
+    <string name="scissor">scissor</string>
+    <string name="paper">paper</string>
+    <string name="rock">rock</string>
+    <string name="result">Você ganhou!</string>
+    <string name="textToUser">Escolha uma opção abaixo</string>
+    <string name="botText">Escolha do app</string>
 </resources>

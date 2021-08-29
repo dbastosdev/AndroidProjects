@@ -12,9 +12,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:text="Escolha do app"
+        android:text="@string/botText"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,10 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/bot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/botchoice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -38,43 +38,63 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:text="Escolha uma opção abaixo"
+        android:text="@string/textToUser"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/bot" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/userRock"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        android:contentDescription="@string/rock"
+        android:onClick="start"
+        app:layout_constraintEnd_toStartOf="@+id/userPaper"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/pedra" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/userPaper"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        android:contentDescription="@string/paper"
+        android:onClick="start"
+        app:layout_constraintEnd_toStartOf="@+id/userScissor"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/userRock"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/papel" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/userScissor"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/scissor"
+        android:onClick="start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/userPaper"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/tesoura" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPaper" />
 </androidx.constraintlayout.widget.ConstraintLayout>
