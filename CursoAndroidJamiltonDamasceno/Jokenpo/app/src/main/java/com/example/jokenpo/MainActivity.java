@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         if (userChoice.equals("Pedra") && botRandom[random] == R.drawable.tesoura) {
             userP ++;
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             userPoint.setText(""+userP);
             textUserPointName.setVisibility(View.VISIBLE);
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             //result.setText(R.string.youwin);
             userP ++;
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             userPoint.setText(""+userP);
             textUserPointName.setVisibility(View.VISIBLE);
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (userChoice.equals("Tesoura") && botRandom[random] == R.drawable.papel){
             userP ++;
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             userPoint.setText(""+userP);
             textUserPointName.setVisibility(View.VISIBLE);
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             botPoint.setVisibility(View.VISIBLE);
         } else if (userChoice.equals("Tesoura") && botRandom[random] == R.drawable.tesoura){
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             textUserPointName.setVisibility(View.VISIBLE);
             textBotPointName.setVisibility(View.VISIBLE);
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             botPoint.setVisibility(View.VISIBLE);
         } else if (userChoice.equals("Papel") && botRandom[random] == R.drawable.papel){
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             textUserPointName.setVisibility(View.VISIBLE);
             textBotPointName.setVisibility(View.VISIBLE);
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             botPoint.setVisibility(View.VISIBLE);
         } else if (userChoice.equals("Pedra") && botRandom[random] == R.drawable.pedra){
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             textUserPointName.setVisibility(View.VISIBLE);
             textBotPointName.setVisibility(View.VISIBLE);
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         } else{
             botP++;
             result.setTextSize(24);
-            result.setTextColor(R.color.black);
+            result.setTextColor(R.color.purple_700);
             result.setText(R.string.result);
             botPoint.setText(""+botP);
             textUserPointName.setVisibility(View.VISIBLE);
