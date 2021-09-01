@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
 
     //Método para exibir resultado
     public void result(){
-        result.setText("alterado");
+        result.setText("resultado");
     }
 
-    //Método para reset e recalculo
+    //Método para reset
     public void reset(){
-        result.setText("alterado");
+        result.setText("reset");
     }
 
 
