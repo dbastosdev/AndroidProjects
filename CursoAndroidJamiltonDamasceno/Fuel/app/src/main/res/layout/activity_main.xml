@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/alcoolCost"
+        android:maxLength="4"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -29,7 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/textPrice"
         android:textAlignment="center"
@@ -66,6 +67,7 @@
 
     <EditText
         android:id="@+id/gasCost"
+        android:maxLength="4"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -134,6 +136,7 @@
 
     <EditText
         android:id="@+id/autoAlcool"
+        android:maxLength="4"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -151,6 +154,7 @@
 
     <EditText
         android:id="@+id/autoGas"
+        android:maxLength="4"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -200,7 +204,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/result"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

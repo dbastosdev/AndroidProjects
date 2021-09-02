@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                calc();
-                result();
+                start();
             }
         });
 
@@ -52,19 +55,59 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Método para cálculo
-    public void calc (){
-        result.setText("alterado");
+    //Método para validação de campos
+    public void start(){
+        if(autoAlcool.getText().toString().equals(null) || autoAlcool.getText().toString().equals("")
+          || autoGas.getText().toString().equals(null) || autoGas.getText().toString().equals("")
+          || alcoolCost.getText().toString().equals(null) || alcoolCost.getText().toString().equals("")
+          || gasCost.getText().toString().equals(null) || gasCost.getText().toString().equals("")){
+            Toast.makeText(getApplicationContext(), "Digite todos valores para prosseguir", Toast.LENGTH_SHORT).show();
+        } else{
+            calc();
+        }
     }
 
-    //Método para exibir resultado
-    public void result(){
-        result.setText("resultado");
+    //Método de cálculo
+    public void calc (){
+
+
+        Float alcoolConsumption = Float.parseFloat(autoAlcool.getText().toString());
+        Float gasConsumptioon = Float.parseFloat(autoGas.getText().toString());
+
+        Float alcoolPrice = Float.parseFloat(alcoolCost.getText().toString());
+        Float gasPrice = Float.parseFloat(gasCost.getText().toString());
+
+        Float percentConsumption = alcoolConsumption / gasConsumptioon;
+        Float percentPrice = alcoolPrice / gasPrice;
+
+        result (percentPrice, percentConsumption);
+
+
+        //Formatador de resultado para duas casas decimais
+        //DecimalFormat formatDec = new DecimalFormat();
+        //formatDec.setRoundingMode(RoundingMode.UP);
+        //result.setText(String.valueOf(formatDec.format(percent)));
     }
+
+    //Método de resultados
+    public void result(Float percentPrice, Float percentConsumption){
+        if(percentPrice < percentConsumption){
+            result.setText("Usar Álcool é vantajoso");
+        } else if (percentPrice > percentConsumption){
+            result.setText("Usar Gasolina é vantajoso");
+        } else{
+            result.setText("Usar álcool ou gasolina é indiferente");
+        }
+    }
+
 
     //Método para reset
     public void reset(){
-        result.setText("reset");
+        autoAlcool.setText("");
+        autoGas.setText("");
+        alcoolCost.setText("");
+        gasCost.setText("");
+        result.setText("");
     }
 
 
