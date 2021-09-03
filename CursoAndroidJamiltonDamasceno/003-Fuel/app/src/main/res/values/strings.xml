@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Álcool ou Gasolina?</string>
+    <string name="result">Resultado</string>
+    <string name="button">Calcular</string>
+    <string name="km_l">km/L</string>
+    <string name="alcool">Álcool</string>
+    <string name="r_l">R$/L</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="textapp">Consumo do veículo - cidade</string>
+    <string name="textPrice">Preço do combustível</string>
+    <string name="reset">reset</string>
+</resources>
