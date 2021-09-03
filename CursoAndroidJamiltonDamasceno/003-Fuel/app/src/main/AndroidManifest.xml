@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fuel">
+
+        //Necessário realizar a declaração da Activity pai para que um botão de retorno seja exibido
+        <activity
+            android:name=".ResultActivity2"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

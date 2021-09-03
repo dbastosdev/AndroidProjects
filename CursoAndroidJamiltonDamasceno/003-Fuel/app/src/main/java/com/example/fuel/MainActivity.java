@@ -2,6 +2,7 @@ package com.example.fuel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView result;
     private Button reset;
 
+    // Variável utilizada na Intent
+    // O google recomenda o uso de constantes globais para passar dados entre intents
+    // https://developer.android.com/training/basics/firstapp/starting-activity
+    public static final String EXTRA_MESSAGE = "com.example.fuel";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 start();
+
+                // Abre nova Intent
+                Intent intent = new Intent(getApplicationContext(), ResultActivity2.class);
+                //String message = "teste";
+                //intent.putExtra(EXTRA_MESSAGE, message);
+                startActivity(intent);
             }
         });
 
@@ -52,12 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 reset();
             }
         });
-
-        // Abre um nova Activity
-
     }
 
-    //Método para validação de campos
+    //Método para validação de campos e chamada do método de cálculo
     public void start(){
         if(autoAlcool.getText().toString().equals(null) || autoAlcool.getText().toString().equals("")
           || autoGas.getText().toString().equals(null) || autoGas.getText().toString().equals("")
