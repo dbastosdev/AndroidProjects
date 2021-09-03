@@ -8,7 +8,7 @@ Olá, iniciei meus estudos de programação e da plataforma Android no início d
 
 ### Sobre o projeto
 
-Esse projeto foi feito antes mesmos de eu aprender Java. Não se assuste com os códigos. Eu fiquei tão empolgado ao iniciar o aprendizado que saí a caça de um projeto simples para codificar. 
+Esse projeto foi feito antes mesmos de eu aprender Java. Não se assuste com os códigos. Eu fiquei tão empolgado ao iniciar o aprendizado que saí a caça de um projeto simples para codificar. Trata-se de um conversor muito simples de números biários para decimal. Utilizo um método do Java para fazer a conversão. 
 
 <img src="/docs/bin2Dec.jpeg" alt="Meu primeiro projeto"/>
 
