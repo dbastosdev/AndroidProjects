@@ -28,7 +28,7 @@ A ideia do app veio desse link: [https://lnkd.in/etNBWS6F](https://lnkd.in/etNBW
 
 ### Sobre o projeto (Curso Android Jamilton Damasceno)
 
-Esse é um game que foi apresentado no curso e profundamente modificado por mim. São solicitados dos usuários, que jogam em dupla a entrada de números em campos diferentes e que após isso são comparados com um número aleatório gerado pelo app. Incluí ainda um contador de pontos. É um bom desafio para iniciantes.   
+Esse é um game que foi apresentado no curso e profundamente modificado por mim. É solicitada a entrada de números dos usuários, que jogam em dupla. esses números são comparados com um número aleatório gerado pelo app. Incluí ainda um contador de pontos. É um bom desafio para iniciantes.   
 
 <img src="/docs/findNumber.png" alt="app Jogo Encontre o número"/>
 
