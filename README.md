@@ -1,4 +1,4 @@
-<img src="/docs/android2Bg.jpg" alt="Capa"/>
+<img src="/docs/android2Bg.jpeg" alt="Capa"/>
 
 # Android Projects
 
