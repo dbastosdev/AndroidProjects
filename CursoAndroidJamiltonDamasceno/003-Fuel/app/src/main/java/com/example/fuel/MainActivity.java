@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     // Variável utilizada na Intent
     // O google recomenda o uso de constantes globais para passar dados entre intents
     // https://developer.android.com/training/basics/firstapp/starting-activity
-    public static final String EXTRA_MESSAGE = "com.example.fuel";
+    public static final String EXTRA_MESSAGE = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
