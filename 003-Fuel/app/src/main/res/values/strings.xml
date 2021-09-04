@@ -6,7 +6,17 @@
     <string name="alcool">Álcool</string>
     <string name="r_l">R$/L</string>
     <string name="gasolina">Gasolina</string>
-    <string name="textapp">Consumo do veículo - cidade</string>
+    <string name="textapp">Autonomia do veículo</string>
     <string name="textPrice">Preço do combustível</string>
     <string name="reset">reset</string>
+    <string name="o_melhor_combust_vel_para_voc_utilizar">O melhor combustível para você utilizar é ...</string>
+    <string name="relat_rio">Relatório</string>
+    <string name="custo_lcool">Custo Álcool:</string>
+    <string name="custo_gasolina">Custo Gasolina:</string>
+    <string name="consumo_lcool">Consumo Álcool</string>
+    <string name="custo_alcool">Custo Álcool</string>
+    <string name="consumo_gasolina">Consumo Gasolina</string>
+    <string name="custo_gas">Custo Gasolina</string>
+    <string name="autonomia_lcool">Autonomia Álcool:</string>
+    <string name="autonomia_gasolina">Autonomia Gasolina:</string>
 </resources>
