@@ -16,18 +16,18 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
 
     // Declaração de atributos globas da MainActivity
-    private EditText autoAlcool;
-    private EditText autoGas;
-    private EditText alcoolCost;
-    private EditText gasCost;
-    private Button calculate;
-    private TextView result;
-    private Button reset;
+    public EditText autoAlcool;
+    public EditText autoGas;
+    public EditText alcoolCost;
+    public EditText gasCost;
+    public Button calculate;
+    public TextView result;
+    public Button reset;
 
     // Variável utilizada na Intent
     // O google recomenda o uso de constantes globais para passar dados entre intents
     // https://developer.android.com/training/basics/firstapp/starting-activity
-    public static final String EXTRA_MESSAGE = null;
+    //public static final String EXTRA_MESSAGE = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
