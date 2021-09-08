@@ -3,6 +3,7 @@ package com.example.a006_homecleaning;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +11,14 @@ import android.widget.ImageView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    public ImageView btnMenu;
-    public Button btnQuit;
     public ConstraintLayout menu;
+    public ImageView btnMenu;
+    public Button btnHome;
+    public Button btnNotifications;
+    public Button btnBookings;
+    public Button btnPlan;
+    public Button btnAdresses;
+    public Button btnQuit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,12 @@ public class HomeActivity extends AppCompatActivity {
         btnMenu = findViewById(R.id.btnMenu);
         btnQuit = findViewById(R.id.btnQuit);
         menu = findViewById(R.id.menu);
+        btnHome = findViewById(R.id.btnHome);
+        btnNotifications = findViewById(R.id.btnNotifications);
+        btnBookings = findViewById(R.id.btnBookings);
+        btnPlan = findViewById(R.id.btnPlans);
+        btnAdresses = findViewById(R.id.btnAdresses);
+
 
         btnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,13 +42,64 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        btnQuit.setOnClickListener(new View.OnClickListener() {
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                menuAction();
+            }
+        });
+
+        btnNotifications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goNotifications = new Intent(getApplicationContext(), NotificationsActivity.class);
+                startActivity(goNotifications);
+                menuAction();
 
             }
         });
 
+       btnBookings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goBookings = new Intent(getApplicationContext(), BookingsActivity.class);
+                startActivity(goBookings);
+                menuAction();
+            }
+        });
+
+        btnPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goPlan = new Intent(getApplicationContext(), PlansActivity.class);
+                startActivity(goPlan);
+                menuAction();
+
+            }
+        });
+
+        btnAdresses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goAdresses = new Intent(getApplicationContext(), AdressesActivity.class);
+                startActivity(goAdresses);
+                menuAction();
+
+            }
+        });
+
+        btnQuit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goQuit = new Intent(getApplicationContext(), QuitActivity.class);
+                startActivity(goQuit);
+                menuAction();
+            }
+        });
 
 
     }

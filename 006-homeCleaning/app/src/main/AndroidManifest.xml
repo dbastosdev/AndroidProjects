@@ -10,8 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.006homeCleaning">
         <activity
+            android:name=".QuitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdressesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlansActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

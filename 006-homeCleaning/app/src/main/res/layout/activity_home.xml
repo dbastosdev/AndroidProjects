@@ -52,21 +52,21 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="70% complete"
+        android:text="Profile 70% complete"
         android:textAlignment="textStart"
         android:textColor="@color/textPerfil"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
-        android:translationX="150dp"
+
         android:id="@+id/imageView2"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/home_image"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,7 +127,7 @@ tomorrow."
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="Account"
             android:textAlignment="textStart"
             android:textColor="@color/textMenu"
@@ -140,11 +140,31 @@ tomorrow."
 
         <Button
 
-            android:id="@+id/button"
+            android:id="@+id/btnHome"
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/menu_home"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:stateListAnimator="@null"
+            android:text="Home"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/textMenu"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+
+            android:id="@+id/btnNotifications"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:drawableLeft="@drawable/menu_notifications"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -157,31 +177,11 @@ tomorrow."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/btnHome" />
 
         <Button
 
-            android:id="@+id/button3"
-
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/menu_plan"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:stateListAnimator="@null"
-            android:text="My plans"
-            android:textAlignment="textStart"
-            android:textAllCaps="false"
-            android:textColor="@color/textMenu"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-        <Button
-
-            android:id="@+id/button2"
+            android:id="@+id/btnBookings"
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -197,12 +197,31 @@ tomorrow."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/btnNotifications" />
 
         <Button
 
-            android:id="@+id/button4"
+            android:id="@+id/btnPlans"
 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_plan"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:stateListAnimator="@null"
+            android:text="My plan"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/textMenu"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBookings" />
+
+
+        <Button
+            android:id="@+id/btnAdresses"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/menu_adresses"
@@ -217,13 +236,12 @@ tomorrow."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/btnPlans" />
 
         <Button
             android:id="@+id/btnQuit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="96dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:stateListAnimator="@null"
@@ -236,7 +254,7 @@ tomorrow."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
+            app:layout_constraintTop_toBottomOf="@+id/btnAdresses" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
